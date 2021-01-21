@@ -1,6 +1,8 @@
 const router = require('express').Router();
-const { getSearchItems } = require('../controllers/apiControllers')
+const { getSearchItems, getItem } = require('../controllers/apiControllers')
+const { catchErrors } = require("../middlewares/index")
 
-router.get('/items', getSearchItems);
+router.get('/items', catchErrors(getSearchItems))
+router.get('/items/:id', catchErrors(getItem))
 
 module.exports = router;
