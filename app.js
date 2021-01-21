@@ -18,8 +18,15 @@ app.use(
         origin: [process.env.FRONTENDPOINT]
     })
 );
+app.use(
+    require("node-sass-middleware")({
+        src: path.join(__dirname, "public"),
+        dest: path.join(__dirname, "public"),
+        sourceMap: true
+    })
+)
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public/build')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
