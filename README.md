@@ -13,7 +13,7 @@ PORT=3000 o el numero de puerto que usted prefiera
 
 ENV=development
 
-FRONTENDPOINT=http://localhost:3001
+FRONTENDPOINT=http://localhost:3001 de igual manera puede utilizar el frontendpoint que mejor le parezca
 
 posteriorment necesita ejecutar el siguiente comando para instalar las dependencias usadas en la raíz del mismo
 
@@ -36,4 +36,6 @@ npm run dev
 ```
 para así ejecutar nodemon y que cuando usted realice cambios en los documentos el server se actualice de manera automatica
 
-A su vez el servidor está configurado para hacer render de la parte elaborada con react para el consumo de la misma
+La API consume la API de Mercado Libre para obtener la data, se manejaron las promesas con async y await debido a la configuración final de la Data que debía enviar el endpoint y así obtener un código más limpio.
+
+A su vez el servidor está configurado para hacer render de la parte elaborada con react para el consumo de la API.
