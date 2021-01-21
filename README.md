@@ -8,8 +8,11 @@ Después de clonar el repositorio debe seguir los siguientes pasos.
 
 ## Creación de un archivo .env
 Deberá agregar un archivo .env en la raíz del proyecto con las siguiente propiedades
+
 PORT=3000 o el numero de puerto que usted prefiera
+
 ENV=development
+
 FRONTENDPOINT=http://localhost:3001
 
 posteriorment necesita ejecutar el siguiente comando para instalar las dependencias usadas en la raíz del mismo
